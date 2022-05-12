@@ -59,7 +59,7 @@ I will mostly try to understand more frontend development concepts. I will be tr
 ### Useful resources
 
 - [Flex Box Cheat Sheet](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - This helped me to visualize flex concepts. I really liked this source and will use it going forward.
-- [Flex Box Justify Content](https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Flex Box Justify Content](https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties) - This is an amazing post which helped me finally understand why there are no justify-items in flex.
 
 ## Author
 
