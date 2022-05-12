@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <main id="wrapper">
+      <!-- ! Navbar ! -->
+      <nav class="navbar">
+        <ul class="navbar__ul">
+          <li class="navbar__list navbar__logo">
+            <img src="images/logo.svg" alt="logo" /><a href=""></a>
+          </li>
+          <li class="navbar__list" id="features">
+            <a href=""
+              >Features &nbsp;<img
+                class="arrowImg"
+                src="./images/icon-arrow-down.svg"
+            /></a>
+
+            <!-- ? Features Dropdown ? -->
+            <div class="dropdown1 dropdown">
+              <div class="dropdown1__list dropdown__list1">
+                <img src="./images/icon-todo.svg" /> &nbsp; Todo List
+              </div>
+              <div class="dropdown1__list dropdown__list2">
+                <img src="./images/icon-calendar.svg" /> &nbsp; Calendar
+              </div>
+              <div class="dropdown1__list dropdown__list3">
+                <img src="./images/icon-reminders.svg" /> &nbsp; Reminders
+              </div>
+              <div class="dropdown1__list dropdown__list4">
+                <img src="./images/icon-planning.svg" /> &nbsp; Planning
+              </div>
+            </div>
+          </li>
+
+          <li class="navbar__list" id="company">
+            <a href=""
+              >Company&nbsp;<img
+                class="arrowImg"
+                src="./images/icon-arrow-down.svg"
+            /></a>
+
+            <!-- ? Company Dropdown ? -->
+            <div class="dropdown2 dropdown">
+              <div class="dropdown2__list dropdown__list1">History</div>
+              <div class="dropdown2__list dropdown__list2">Our Team</div>
+              <div class="dropdown2__list dropdown__list3">Blog</div>
+            </div>
+          </li>
+          <li class="navbar__list"><a href="">Careers</a></li>
+          <li class="navbar__list"><a href="">About</a></li>
+          <button class="navbar__cta">Login</button>
+          <button class="navbar__cta" id="registerButton">Register</button>
+        </ul>
+
+        <!-- ! Mobile Navbar ! -->
+        <ul class="mobileNavUl">
+          <li class="mobileNavLi">
+            <a class="logo" href=""><img src="./images/logo.svg" alt="" /></a>
+          </li>
+          <li class="mobileNavLi hamburgerOpen">
+            <img onclick="openMenu()" src="./images/icon-menu.svg" alt="" />
+          </li>
+        </ul>
+      </nav>
+
+      <!-- ! Mobile Menu Shadow ! -->
+      <div onclick="closeMenu()" class="mobileMenuShadow"></div>
+
+      <!-- ! Mobile Side Menu ! -->
+      <nav class="sideMenu">
+        <ul class="sideMenuUl">
+          <li class="sideMenuLi closeButtonLi">
+            <img
+              onclick="closeMenu()"
+              src="./images/icon-close-menu.svg"
+              alt=""
+            />
+          </li>
+          <li onclick="featuresDropDown()" class="sideMenuLi">
+            Features<img
+              id="mobileFeaturesArrow"
+              src="./images/icon-arrow-down.svg"
+              alt=""
+            />
+          </li>
+          <li class="sideMenuLi sideMenuDropDown mobileFeaturesDropDown">
+            <img src="./images/icon-todo.svg" /><a href="">Todo List</a>
+          </li>
+          <li class="sideMenuLi sideMenuDropDown mobileFeaturesDropDown">
+            <img src="./images/icon-calendar.svg" /><a href="">Calendar</a>
+          </li>
+          <li class="sideMenuLi sideMenuDropDown mobileFeaturesDropDown">
+            <img src="./images/icon-reminders.svg" /><a href="">Reminders</a>
+          </li>
+          <li class="sideMenuLi sideMenuDropDown mobileFeaturesDropDown">
+            <img src="./images/icon-planning.svg" /><a href="">Planning</a>
+          </li>
+          <li onclick="companyDropDown()" class="sideMenuLi">
+            Company<img
+              id="mobileCompanyArrow"
+              src="./images/icon-arrow-down.svg"
+              alt=""
+            />
+          </li>
+          <li class="sideMenuLi sideMenuDropDown mobileCompanyDropDown">
+            <a href="">History</a>
+          </li>
+          <li class="sideMenuLi sideMenuDropDown mobileCompanyDropDown">
+            <a href="">Our Team</a>
+          </li>
+          <li class="sideMenuLi sideMenuDropDown mobileCompanyDropDown">
+            <a href="">Blog</a>
+          </li>
+          <li class="sideMenuLi"><a href="">Careers</a></li>
+          <li class="sideMenuLi"><a href="">About</a></li>
+          <li class="sideMenuLi buttonLi">Login</li>
+          <li class="sideMenuLi buttonLi"><button>Register</button></li>
+        </ul>
+      </nav>
+      <!-- ! End of Navbar ! -->
+
+      <article class="article">
+        <div class="articleContent">
+          <h1>Make remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button>Learn more</button>
+          <div class="sponsor">
+            <img src="./images/client-databiz.svg" alt="" />
+            <img src="./images/client-audiophile.svg" alt="" />
+            <img src="./images/client-meet.svg" alt="" />
+            <img src="./images/client-maker.svg" alt="" />
+          </div>
+        </div>
+        <div class="hero">
+          <img src="images/image-hero-desktop.png" alt="" class="heroImg" />
+        </div>
+      </article>
+
+      <footer class="footer">
+        <p>
+          Challenge by&nbsp;
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+            Frontend Mentor</a
+          >. Coded by&nbsp;<a href="https://www.instagram.com/ramawib">
+            Dimas Rama</a
+          >.
+        </p>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

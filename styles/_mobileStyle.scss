@@ -1,0 +1,148 @@
+@media screen and (max-width: 768px) {
+  #wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 0.2fr;
+    grid-template-areas:
+      "nav"
+      "article"
+      "article"
+      "footer";
+  }
+
+  .navbar {
+    grid-area: nav;
+    .navbar__ul {
+      display: $inactive;
+    }
+    .mobileNavUl {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+    .logo {
+      margin-left: 4vw;
+    }
+    .hamburgerOpen {
+      margin-left: auto;
+      margin-right: 4vw;
+    }
+  }
+
+  //   Side Menu
+  .mobileMenuShadow {
+    display: $inactive;
+    position: absolute;
+    opacity: 0.6;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+  }
+  .sideMenu {
+    display: $inactive;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    width: 65%;
+    height: 100%;
+    background-color: white;
+    .sideMenuUl {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      .sideMenuLi {
+        display: flex;
+        align-items: center;
+        padding: 0 10%;
+        list-style-type: none;
+        width: 100%;
+        height: 6%;
+        img {
+          margin-left: 5%;
+        }
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+      .mobileCompanyDropDown,
+      .mobileFeaturesDropDown {
+        display: none;
+      }
+      .sideMenuDropDown {
+        padding-left: 15%;
+      }
+      .sideMenuDropDown a {
+        margin-left: 5%;
+      }
+      .closeButtonLi {
+        justify-content: flex-end;
+        padding: 8% 6% 0 0;
+      }
+      .buttonLi {
+        justify-content: center;
+        button {
+          width: 100%;
+          height: 85%;
+          font-size: 100%;
+          background-color: white;
+          border: 2px solid black;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+
+  .article {
+    grid-area: article;
+    padding: 0;
+    row-gap: 5vw;
+    flex-direction: column-reverse;
+    .articleContent {
+      padding: 5%;
+      h1 {
+        font-size: 2.2rem;
+        width: 100%;
+        text-align: center;
+      }
+      p {
+        line-height: 2rem;
+        text-align: center;
+        width: 100%;
+        font-size: 100%;
+        padding: 0;
+      }
+      button {
+        margin: 0 auto;
+        background: black;
+        color: white;
+        width: 8rem;
+        height: 3rem;
+        font-size: 0.85rem;
+      }
+      .sponsor {
+        margin: auto 0;
+        img {
+          align-self: center;
+          width: 15vw;
+        }
+      }
+    }
+    .hero {
+      .heroImg {
+        padding-top: 10%;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .footer {
+    grid-area: footer;
+    p {
+      font-size: 0.7rem;
+    }
+  }
+}
