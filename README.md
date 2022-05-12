@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/ramawib/frontend-mentor-challenge-intro-section-with-dropdown-navigation)
-- Live Site URL: [Add live site URL here](https://ramawib.github.io/frontend-mentor-challenge-intro-section-with-dropdown-navigation/)
+- Solution URL: [My Frontendmentor Solution](https://www.frontendmentor.io/solutions/responsive-landing-page-with-scss-and-javascript-Skd6MC5L9)
+- Live Site URL: [Live Site](https://ramawib.github.io/frontend-mentor-challenge-intro-section-with-dropdown-navigation/)
 
 ## My process
 
